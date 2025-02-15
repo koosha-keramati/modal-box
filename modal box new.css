@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "noto sans arabic" , sans-serif;
+}
+body{
+    background-color: rgba(137 , 43 , 226 , 0.687);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#open_btn{
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+}
+.modal-content{
+    background-color: #fefefe;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    animation: animatetop 0.5s;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+    border-radius:0 0 10px 10px;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    padding: 2px 16px;
+}
+.closebtn{
+    font-size: 35px;
+}
+.closebtn:hover{
+    color: black;
+    cursor: pointer;
+}
+.modal-body{
+    padding: 15px 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+@keyframes animatetop{
+    from{
+        margin-top: -300px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 100px;
+        opacity: 1;
+    }
+}    
